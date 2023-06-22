@@ -1,43 +1,63 @@
-@use "color";
+$primary-color: #dda7a7;
+$secondary-color: #a2e6eb;
+$body-color: #acabab;
+$font-stack: "Roboto", sans-serif;
+
+// Default Global style
 * {
   margin: 0;
+  box-sizing: border-box;
+  font-family: $font-stack;
 }
-// $primary-color: red;
-// $secondary-color: blue;
-@mixin flex {
+.flex {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 1rem;
 }
-@mixin transform($color, $trans) {
-  transform: $trans;
-  background-color: complement($color);
-}
-@mixin listflex {
+ul {
   list-style: none;
-  display: flex;
-  gap: 30px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 .wrapper {
-  background-color: color.$primary-color;
-  .topnav {
-    background-color: color.$secondary-color;
-    @include flex;
-    justify-content: space-between;
-  }
+  background: $body-color;
+  min-height: 100vh;
+}
+.primary-header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  box-shadow: 0 0 3px 3px black;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: $primary-color;
   .logo {
-    font-size: 2rem;
-    @include transform(color.$primary-color, rotate(30deg));
-  }
-  .menu {
-    ul {
-      @include listflex;
-    }
-    li {
-      cursor: pointer;
-      &:hover {
-        transform: scale(1.4);
-        transition: all ease-in-out 0.4s;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    div {
+      &:nth-child(1) {
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+      &:nth-child(2) {
+        h1 {
+          font-size: 1rem;
+        }
+      }
+      .line {
+        &::before {
+          content: "";
+          height: 60%;
+          width: 5px;
+          left: 50%;
+          position: absolute;
+          background-color: $body-color;
+        }
       }
     }
   }
