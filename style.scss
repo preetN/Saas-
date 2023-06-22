@@ -1,0 +1,44 @@
+@use "color";
+* {
+  margin: 0;
+}
+// $primary-color: red;
+// $secondary-color: blue;
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin transform($color, $trans) {
+  transform: $trans;
+  background-color: complement($color);
+}
+@mixin listflex {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.wrapper {
+  background-color: color.$primary-color;
+  .topnav {
+    background-color: color.$secondary-color;
+    @include flex;
+    justify-content: space-between;
+  }
+  .logo {
+    font-size: 2rem;
+    @include transform(color.$primary-color, rotate(30deg));
+  }
+  .menu {
+    ul {
+      @include listflex;
+    }
+    li {
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.4);
+        transition: all ease-in-out 0.4s;
+      }
+    }
+  }
+}

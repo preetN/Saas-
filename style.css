@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+}
+
+.wrapper {
+  background-color: red;
+}
+.wrapper .topnav {
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.wrapper .logo {
+  font-size: 2rem;
+  transform: rotate(30deg);
+  background-color: aqua;
+}
+.wrapper .menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.wrapper .menu li {
+  cursor: pointer;
+}
+.wrapper .menu li:hover {
+  transform: scale(1.4);
+  transition: all ease-in-out 0.4s;
+}/*# sourceMappingURL=style.css.map */
