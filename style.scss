@@ -150,21 +150,27 @@ a {
   }
 }
 .skill-section {
+  flex-direction: column;
   margin: auto;
   width: 80%;
   padding: 5rem;
-  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-  .skill-list {
-    .icon {
-      i {
-        font-size: 5rem;
+
+  .skillsdiv {
+    padding: 2rem;
+    justify-content: space-around;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    .skill-list {
+      .icon {
+        i {
+          font-size: 5rem;
+        }
       }
-    }
-    .skill {
-      font-size: 1.5rem;
-      font-weight: bold;
+      .skill {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
     }
   }
 }
@@ -199,6 +205,81 @@ a {
           &:nth-child(2) {
             font-weight: bold;
           }
+        }
+      }
+    }
+  }
+}
+.about-section {
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ccf381;
+  .about {
+    padding: 1rem;
+    justify-content: space-between;
+
+    .right {
+      padding: 2rem;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 0.5rem;
+      .name p {
+        &:nth-child(1) {
+          font-size: 1rem;
+        }
+      }
+      .interests p {
+        &:nth-child(1) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+.contact-section {
+  margin-top: 5rem;
+  flex-direction: column;
+  align-items: center;
+  .contact {
+    padding: 3rem;
+    flex-direction: column;
+    align-items: center;
+    .socials {
+      i {
+        font-size: 3rem;
+      }
+      margin-bottom: 1rem;
+    }
+    .email-option {
+      margin-top: 1rem;
+      button {
+        padding: 0.5rem 1.3rem;
+        border-radius: 2rem;
+        border: none;
+        background-color: #4831d4;
+        color: #ffffff;
+      }
+    }
+  }
+}
+.footer {
+  background-color: rgb(0, 0, 0);
+  color: $body-color;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.6rem;
+  .footer-container {
+    ul {
+      text-align: center;
+      li {
+        letter-spacing: 2px;
+        margin-bottom: 0.5rem;
+        &:nth-child(1) {
+          margin-bottom: 0.8rem;
+          font-size: 1rem;
+          font-weight: bold;
         }
       }
     }
