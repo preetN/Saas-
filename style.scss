@@ -75,6 +75,7 @@ a {
     padding: 5rem 2rem;
     .left {
       grid-area: left;
+      width: 50%;
       div {
         flex-direction: column;
         gap: 2rem;
@@ -104,6 +105,9 @@ a {
     .right {
       grid-area: right;
       margin: -7rem;
+      img {
+        width: 75%;
+      }
     }
   }
 }

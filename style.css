@@ -69,6 +69,7 @@ a {
 }
 .section1 .hero .left {
   grid-area: left;
+  width: 50%;
 }
 .section1 .hero .left div {
   flex-direction: column;
@@ -98,6 +99,9 @@ a {
 .section1 .hero .right {
   grid-area: right;
   margin: -7rem;
+}
+.section1 .hero .right img {
+  width: 75%;
 }
 
 .banner {
