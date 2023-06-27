@@ -276,15 +276,13 @@ a {
   font-size: 0.6rem;
   .footer-container {
     ul {
+      padding-top: 1rem;
       text-align: center;
+
+      padding-inline-start: 0px;
       li {
         letter-spacing: 2px;
         margin-bottom: 0.5rem;
-        &:nth-child(1) {
-          margin-bottom: 0.8rem;
-          font-size: 1rem;
-          font-weight: bold;
-        }
       }
     }
   }

@@ -256,14 +256,12 @@ a {
   font-size: 0.6rem;
 }
 .footer .footer-container ul {
+  padding-top: 1rem;
   text-align: center;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 .footer .footer-container ul li {
   letter-spacing: 2px;
   margin-bottom: 0.5rem;
-}
-.footer .footer-container ul li:nth-child(1) {
-  margin-bottom: 0.8rem;
-  font-size: 1rem;
-  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
