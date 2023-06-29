@@ -3,11 +3,6 @@
   scroll-behavior: smooth;
 }
 
-$primary-color: #ccf381;
-$secondary-color: #4831d4;
-$sec-color: grey;
-$body-color: #ffffff;
-$text-color: black;
 $font-stack: "Roboto", sans-serif;
 :root {
   --color-dark: black;
@@ -253,9 +248,10 @@ a {
   color: var(--text-color1);
   .project-list {
     padding: 3rem 2rem 0rem 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
     gap: 2rem;
     .project {
+      width: 160px;
       flex-direction: column;
       border-radius: 10px;
       box-shadow: 0 4px 12px 4px var(--shadow-color);

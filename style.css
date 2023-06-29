@@ -235,10 +235,11 @@ a {
 }
 .project-section .project-list {
   padding: 3rem 2rem 0rem 2rem;
-  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
   gap: 2rem;
 }
 .project-section .project-list .project {
+  width: 160px;
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 0 4px 12px 4px var(--shadow-color);
