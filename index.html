@@ -20,7 +20,12 @@
     <title>My Portfolio</title>
   </head>
   <body>
+    <input id="darkMode" type="checkbox" class="dark-mode-check" />
     <div class="wrapper">
+      <!-- dark mode toggle -->
+      <label for="darkMode"
+        ><i class="fa-solid fa-circle-half-stroke dark-mode-toggle"></i
+      ></label>
       <!-- Header..  -->
       <header class="flex primary-header">
         <div class="logo flex">
@@ -28,7 +33,11 @@
           <div><h1 class="line">Web Developer</h1></div>
         </div>
         <div class="right">
-          <ul class="flex">
+          <input type="checkbox" id="check" />
+          <label for="check" class="menu-item"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+          <ul class="flex navigation">
             <li><a href="#header">Home</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -64,7 +73,7 @@
 
       <!-- Banner ..  -->
 
-      <section class="banner flex">
+      <section class="banner">
         <div class="conatiner flex">
           <div class="flex info-list">
             <div class="info-content flex">
@@ -224,7 +233,10 @@
           <h3>OR</h3>
           <div class="email-option">
             <button>
-              pnarain82@gmail.com <i class="fa-solid fa-envelope"></i>
+              pnarain82@gmail.com
+              <a href="mailto:pnarain82@gmail.com"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
             </button>
           </div>
         </div>
