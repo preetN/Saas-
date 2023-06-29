@@ -127,7 +127,7 @@ a {
 }
 .section1 .hero .left {
   grid-area: left;
-  width: 50%;
+  text-align: center;
 }
 .section1 .hero .left div {
   flex-direction: column;
@@ -156,6 +156,8 @@ a {
 }
 .section1 .hero .right {
   grid-area: right;
+  display: flex;
+  justify-content: center;
 }
 .section1 .hero .right img {
   width: 100%;
@@ -206,7 +208,7 @@ a {
   flex-direction: column;
   margin: auto;
   width: 80%;
-  padding: 5rem;
+  padding: 2rem;
   align-items: center;
   color: var(--text-color1);
 }

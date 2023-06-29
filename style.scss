@@ -132,7 +132,7 @@ a {
     padding: 5rem 2rem;
     .left {
       grid-area: left;
-      width: 50%;
+      text-align: center;
       div {
         flex-direction: column;
         gap: 2rem;
@@ -161,6 +161,8 @@ a {
     }
     .right {
       grid-area: right;
+      display: flex;
+      justify-content: center;
       img {
         width: 100%;
         min-width: 110px;
@@ -217,7 +219,7 @@ a {
   flex-direction: column;
   margin: auto;
   width: 80%;
-  padding: 5rem;
+  padding: 2rem;
   align-items: center;
   color: var(--text-color1);
   .skillsdiv {
@@ -408,6 +410,7 @@ a {
   .banner {
     .conatiner {
       border-radius: 2rem;
+
       .info-list {
         flex-direction: column;
         align-items: center;
