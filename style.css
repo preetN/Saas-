@@ -356,7 +356,7 @@ a {
   }
   .section1 .hero {
     padding: 1rem;
-    margin: 2rem 0rem;
+    margin: 2rem 1rem;
     grid-template-areas: "right" "left";
   }
   .section1 .hero .left div button {
