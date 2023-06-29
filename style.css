@@ -355,13 +355,15 @@ a {
     padding-bottom: 1rem;
   }
   .section1 .hero {
+    padding: 1rem;
+    margin: 2rem 0rem;
     grid-template-areas: "right" "left";
   }
   .section1 .hero .left div button {
     padding: 0.8rem;
   }
   .section1 .hero .right img {
-    width: 300px;
+    width: 250px;
     height: auto;
   }
   .banner .conatiner {

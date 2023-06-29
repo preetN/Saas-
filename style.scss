@@ -383,6 +383,8 @@ a {
   //hero section
   .section1 {
     .hero {
+      padding: 1rem;
+      margin: 2rem 0rem;
       grid-template-areas:
         "right"
         "left";
@@ -395,7 +397,7 @@ a {
       }
       .right {
         img {
-          width: 300px;
+          width: 250px;
           height: auto;
         }
       }
